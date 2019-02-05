@@ -29,14 +29,16 @@ namespace ConsoleApp4
 
             Console.WriteLine("Your estimated total for shipping this package is: $" + quote.ToString("N2"));
             Console.WriteLine("Thank you.");
+            Console.Read();
+            return;
 
-            Error1:
+        Error1:
             {
                 Console.Write("Error, Package too heavy to be shipped by Package Express. Have a good day.");
                 Console.Read();
                 return;
             }
-            Error2:
+        Error2:
             {
                 Console.Write("Error, Package too big to be shipped via Package Express. Have an okay day.");
                 Console.Read();
